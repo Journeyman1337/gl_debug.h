@@ -25,8 +25,8 @@ PROJECT(gld
     DESCRIPTION "A header only OpenGL debugging library"
     LANGUAGES C
 )
-option(GLD_BUILD_EXAMPLE "Build the gl_debug.h example project" ON)
-option(GLD_EXAMPLE_AUTO_FETCH "Automatically fetch the dependencies of the gl_debug.h example project" ON)
+option(GLD_BUILD_EXAMPLE "Build the gl_debug.h example project" OFF)
+option(GLD_EXAMPLE_AUTO_FETCH "Automatically fetch the dependencies of the gl_debug.h example project" OFF)
 add_library(${PROJECT_NAME} INTERFACE "")
 add_library(gld::gld ALIAS ${PROJECT_NAME})
 target_include_directories(${PROJECT_NAME}
